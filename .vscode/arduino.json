@@ -1,0 +1,6 @@
+{
+    "board": "arduino:avr:unomini",
+    "port": "COM3",
+    "programmer": "avrisp",
+    "sketch": "dc_motor_driver.ino"
+}
