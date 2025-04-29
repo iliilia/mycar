@@ -19,14 +19,10 @@ void setup() {
 }
 
 void loop() {
-  motorBackLeft.run(FORWARD);  // задаем движение вперед
-  motorBackRight.run(FORWARD);  // задаем движение вперед
-  motorBackLeft.setSpeed(MAX_SPEED);   // задаем скорость движения
-  motorBackRight.setSpeed(MAX_SPEED);   // задаем скорость движения
-  motorFrontLeft.run(FORWARD);  // задаем движение вперед
-  motorFrontRight.run(FORWARD);  // задаем движение вперед
-  motorFrontLeft.setSpeed(MAX_SPEED);   // задаем скорость движения
-  motorFrontRight.setSpeed(MAX_SPEED);   // задаем скорость движения
+  runMotor(motorBackLeft, MAX_SPEED, FORWARD);
+  runMotor(motorBackRight, MAX_SPEED, FORWARD);
+  runMotor(motorFrontLeft, MAX_SPEED, FORWARD);
+  runMotor(motorFrontRight, MAX_SPEED, FORWARD);
 
 
 
@@ -34,20 +30,20 @@ void loop() {
 
   motorBackLeft.run(RELEASE);  // останавливаем мотор M1
   motorBackRight.run(RELEASE);  // останавливаем мотор M2
-
   motorFrontLeft.run(RELEASE);  // останавливаем мотор M1
   motorFrontRight.run(RELEASE);  // останавливаем мотор M2
 
-
   motorBackLeft.run(BACKWARD); // задаем движение назад
-  motorBackRight.run(BACKWARD); // задаем движение назад
   motorBackLeft.setSpeed(MAX_SPEED);   // задаем скорость движения
-  motorBackRight.setSpeed(MAX_SPEED);   // задаем скорость движения
-  motorFrontLeft.run(BACKWARD); // задаем движение назад
-  motorFrontRight.run(BACKWARD); // задаем движение назад
-  motorFrontLeft.setSpeed(MAX_SPEED);   // задаем скорость движения
-  motorFrontRight.setSpeed(MAX_SPEED);   // задаем скорость движения
 
+  motorBackRight.run(BACKWARD); // задаем движение назад
+  motorBackRight.setSpeed(MAX_SPEED);   // задаем скорость движения
+
+  motorFrontLeft.run(BACKWARD); // задаем движение назад
+  motorFrontLeft.setSpeed(MAX_SPEED);   // задаем скорость движения
+
+  motorFrontRight.run(BACKWARD); // задаем движение назад
+  motorFrontRight.setSpeed(MAX_SPEED);   // задаем скорость движения
 
   delay(2000);          // указываем время движения
 
