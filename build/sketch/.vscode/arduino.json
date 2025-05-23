@@ -1,8 +1,0 @@
-#line 1 "C:\\projects\\Arduino\\dc_motor_driver\\.vscode\\arduino.json"
-{
-    "port": "COM3",
-    "board": "arduino:avr:unomini",
-    "output": "build",
-    "programmer": "avrisp",
-    "sketch": "dc_motor_driver.ino"
-}
